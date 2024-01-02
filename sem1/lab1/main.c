@@ -187,18 +187,6 @@ int main() {
             char lastName[50];
             char firstName[50];
             char middleName[50];
-
-            // if ((strstr(contacts[i].name0, inputString) != NULL && strcmp(contacts[i].name0, "") != 0) ||
-            //     (strstr(contacts[i].name1, inputString) != NULL && strcmp(contacts[i].name1, "") != 0) ||
-            //     (strstr(contacts[i].name2, inputString) != NULL && strcmp(contacts[i].name2, "") != 0) ||
-            //     (strstr(contacts[i].name3, inputString) != NULL && strcmp(contacts[i].name3, "") != 0) ||
-            //     (strstr(contacts[i].name4, inputString) != NULL && strcmp(contacts[i].name4, "") != 0) ||
-            //     (strstr(contacts[i].name5, inputString) != NULL && strcmp(contacts[i].name5, "") != 0) ||
-            //     (strstr(contacts[i].name6, inputString) != NULL && strcmp(contacts[i].name6, "") != 0)) {
-            //     printf("Found, %s, %s.\n", contacts[i].name0, contacts[i].prettyPhone);
-            //     recordFound = 1;
-            //     break;
-            // }
         }
     }
 
