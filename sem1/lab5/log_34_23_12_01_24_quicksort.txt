@@ -1,0 +1,5 @@
+swapped a[7] and a[12]
+swapped a[1] and a[4]
+swapped a[3] and a[9]
+swapped a[4] and a[7]
+swapped a[8] and a[10]

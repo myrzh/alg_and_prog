@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-// #include <time.h>
+#include <time.h>
 
 void calc_int() {
     int variable;
@@ -86,7 +86,8 @@ void calc_unsigned_long_long_int() {
     p2 = (&variable) + 1;
     long size = p2 - p1;
 
-    unsigned long long int max = (unsigned long long int) (pow(2, size * 8) - 1); // idk why there's any need to specify right expression value
+    // unsigned long long int max = (unsigned long long int) (pow(2, size * 8) - 1); // idk why there's any need to specify right expression value
+    unsigned long long int max = (pow(2, size * 8) - 1); // idk why there's any need to specify right expression value
     unsigned long long int min = max + 1;
 
     printf("unsigned long long int: %ld, %llu, %llu\n", size, max, min);
@@ -113,8 +114,8 @@ void calc_double() {
 }
 
 int main() {
-    // clock_t t;
-    // t = clock();
+    clock_t t;
+    t = clock();
 
     calc_int();
     calc_short_int();
@@ -126,9 +127,9 @@ int main() {
     calc_float();
     calc_double();
 
-    // t = clock() - t;
-    // double timeTaken = ((double)t) / CLOCKS_PER_SEC;
+    t = clock() - t;
+    double timeTaken = ((double)t) / CLOCKS_PER_SEC;
 
-    // printf("script took %f seconds to execute\n", timeTaken);
+    printf("script took %f seconds to execute\n", timeTaken);
     return 0;
 }
